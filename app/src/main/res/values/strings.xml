@@ -2,4 +2,5 @@
     <string name="app_name">APP Aula 02 - LinearLayout</string>
     <string name="nome_completo">Nome completo</string>
     <string name="enviar">Enviar</string>
+    <string name="primeiro_exemplo_linearlayout">Primeiro Exemplo LinearLayout</string>
 </resources>

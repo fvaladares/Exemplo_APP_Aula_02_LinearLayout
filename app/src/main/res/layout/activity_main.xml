@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:gravity="center_horizontal"
-        android:text="Primeiro Exemplo LinearLayout" />
+        android:text="@string/primeiro_exemplo_linearlayout" />
 
     <TextView
         android:id="@+id/tvMainNome"
@@ -27,7 +27,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:hint="@string/nome_completo" />
+        android:hint="@string/nome_completo"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp" />
 
     <Button
         android:id="@+id/btMainEnviar"
