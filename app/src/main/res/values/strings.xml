@@ -3,4 +3,8 @@
     <string name="nome_completo">Nome completo</string>
     <string name="enviar">Enviar</string>
     <string name="primeiro_exemplo_linearlayout">Primeiro Exemplo LinearLayout</string>
+    <string name="limpar_campos">Limpar Campos</string>
+    <string name="mensagem_erro_nome_nao_preenchido">O campo Nome Completo deve ser preenchido</string>
+    <string name="mensagem_nome_ok">O nome informado foi: %1$s</string>
+    <string name="logo_da_faculdade_pitagoras">Logo da Faculdade Pitágoras</string>
 </resources>

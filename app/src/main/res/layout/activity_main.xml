@@ -1,41 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingHorizontal="16dp"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tvRotulo"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:gravity="center_horizontal"
-        android:text="@string/primeiro_exemplo_linearlayout" />
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tvMainNome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        tools:text="@tools:sample/full_names" />
+        <ImageView
+            android:id="@+id/ivMainLogo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margem_padrao"
+            android:contentDescription="@string/logo_da_faculdade_pitagoras"
+            android:src="@drawable/pitagoras_faculdade" />
 
-    <EditText
-        android:id="@+id/etMainNomeCompleto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:hint="@string/nome_completo"
-        android:importantForAutofill="no"
-        android:inputType="text"
-        android:minHeight="48dp" />
+        <TextView
+            android:id="@+id/tvRotulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="@string/primeiro_exemplo_linearlayout" />
 
-    <Button
-        android:id="@+id/btMainEnviar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/enviar" />
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/etMainNomeCompleto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_entre_itens_padrao"
+            android:hint="@string/nome_completo"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:minHeight="48dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btMainEnviar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_entre_itens_padrao"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:minHeight="80dp"
+                android:text="@string/enviar" />
+
+            <Button
+                android:id="@+id/btMainLimparCampos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="@dimen/espaco_entre_itens_padrao"
+                android:layout_weight="1"
+                android:minHeight="80dp"
+                android:text="@string/limpar_campos" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvMainNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_entre_itens_padrao"
+            android:gravity="center_horizontal"
+            tools:text="@tools:sample/full_names" />
+
+    </LinearLayout>
+</ScrollView>

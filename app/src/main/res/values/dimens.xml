@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="espaco_entre_itens_padrao">8dp</dimen>
+    <dimen name="margem_padrao">16dp</dimen>
+</resources>
